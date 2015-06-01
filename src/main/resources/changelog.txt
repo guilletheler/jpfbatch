@@ -1,0 +1,36 @@
+- Versiones anteriores a la 1.51 no tienen changelog
+- Agrego Semilla aleatoria en tiempo Calendar.GetInstance().getTimeInMillis() y realizo varios sorteos para conseguir el serial
+
+ver 1.52
+- Reduccion de reintentos de envio de 4 a 3
+- Fin de thread principal forzado
+- Control de ejecución en paralelo
+
+ver 1.53
+- Mejora de control de apertura y cierre del puerto serie
+- Limpieza de parametros de entrada en desuso
+- Listado de comandos
+- Cambio de archivo de configuración jpfbatch.cfg a jpfbatch.properties con retiro de libreria JEnv
+- Funcionamiento como Cliente o como Servidor en una red ver 1.53.1
+- Mejora del logeo
+- Carga menos librerias en modo cliente
+
+ver 1.53.2
+- Reintenta con errores timeout
+
+ver 1.53.27
+- Envia siempre al final un comando con serial 127 para sincronizar y no sortear mas el serial ver 1.53.56
+- se cambió de paquete la clase jpfbatch.PFBatch a ifepson.FiscalDocument para que sea más fácil integrarlo en otros proyectos
+- se eliminaron las dependencias a myjob desde el paquete IFEpson por el mismo motivo<br/> ver 1.60.9 
+- Uso de myjob.jpe para configuracion
+- Cambio de libreria rxtx a jssc para control del puerto serie
+- Uso de myjob.jpe para configuracion
+- Refactorización de parte de IFEpson, mejor control de parametros por defecto 
+- Reparación de problema de impresion de tique/factura A
+
+ver 1.60.19 
+- Compilado con version de java 1.6 <br/></html> 
+
+ver 1.61.1
+- Migracion de librerias propias a apache.commons
+- Cambio de ant a maven
